@@ -33,7 +33,7 @@ cd GT-Geo
 cd 1GT
 
 # run the model GT-Geo
-python main_split_version.py --backbone mpnn --epochs 4000 --lr 0.01 --hidden_channels 80  --ours_layers 1  --use_graph  --graph_weight 0.6 --ours_dropout 0 --ours_use_residual  --alpha 0.5  --ours_use_weight  --ours_use_act  --num_heads 1 --edge_hidden_size 80 --num_step_message_passing 2 --seed 123  --device 0 
+python main_split_version.py --backbone mpnn --epochs 4000 --lr 0.01 --hidden_channels 80  --ours_layers 1  --use_graph  --graph_weight 0.95 --ours_dropout 0.1 --ours_use_residual  --alpha 0.5  --ours_use_weight  --ours_use_act  --num_heads 1 --edge_hidden_size 80 --num_step_message_passing 2 --seed 123  --device 0 
 
 ```
 
@@ -93,4 +93,5 @@ The "datasets" folder contains three subfolders corresponding to three real-worl
 - ny(los/sh)_dstip_id_allinfo_sim_test_0.7.txt   *# Testing set for New York/Shanghai/Los Angeles*
 - ny(los/sh)_edge_feature_sim.txt   *# Edge features in the New York/Shanghai/Los Angeles dataset*
 - ny(los/sh)_ip_feature_sim.txt   *# Node features in the New York/Shanghai/Los Angeles dataset*
+
 
